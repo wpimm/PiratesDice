@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en-US">
+  <head>
+  <meta charset ="utf-8">
+</head>
+  <title>Pirate's Dice</title>
+<link rel="stylesheet" href="./style.css">
+  <body>
+    <h1>Roll Fer Yer Life Matey!!</h1>
+    <p>
+      The objective of this game is to roll two dice and get a higher value than your opponent.<br>
+      It's not as simple as just rolling the dice though. You will have a chance to guess what the roll will be<br>
+      You have to guess respectively! Your guess for the first die won't count towards the second.<br>
+      The exact same rules apply to your opponent. Except he doesn't get walk the plank if he loses...<br>
+    </p>
+    <div id="wrapper">
+    <script src="./ThePiratesDice.js"></script>
+    <h3>Player Dice<h3>
+    <div id="playerDieOne" class="dice">0</div>
+    <div id="playerDieTwo" class="dice">0</div>
+    <br>
+    <h3>Opponent Dice</h3>
+    <div id="opponentDieOne" class="dice">0</div>
+    <div id="opponentDieTwo" class="dice">0</div>
+    <button onclick="rollTheDice()">Roll The Dice!!</button>
+
+    <h2 id="statusPlayer"></h2>
+    <h2 id="playerGuesses"></h2>
+    <br>
+    <h2 id="statusOpponent"></h2>
+    <h2 id="opponentGuesses"></h2>
+    <br>
+    <h2 id="playerFate"></h2>
+    </div>
+  </body>
+</html>
